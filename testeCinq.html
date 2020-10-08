@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="testeCinqStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.js"
+    integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="testeCinq.js"></script>
+</head>
+<body>
+
+    <div class="clouds">
+        <img src="cloud1.png" style="--i:1;">
+        <img src="cloud2.png" style="--i:2;">
+        <img src="cloud3.png" style="--i:3;">
+        <img src="cloud4.png" style="--i:4;">
+        <img src="cloud5.png" style="--i:5;">
+    </div>
+    <h1>Teste Cinq</h1>
+    <div id="Lista-pessoas" class="fade">
+    </div>
+    <div class="imagemdra">
+        <img src="pluginIcon.svg" >
+    </div>
+    <script>
+        window.onload = function () {
+            const divLista = document.getElementById('Lista-pessoas');
+            divLista.innerHTML = `<ul>Lista de Pessoas
+                                          <li onclick="nomeMsg()" class="nome">${Andre.name}</li>
+                                          <li class="frase1" >${Andre.darOi()}</li>
+                                          <li onclick="nomeMsg1()" class="nome">${Andrey.name}</li>
+                                          <li class="frase2">${Andrey.darOi()}</li>
+                                          <li onclick="nomeMsg2()" class="nome">${Fernanda.name}</li>
+                                          <li class="frase3">${Fernanda.darOi()}</li>
+                                          <li onclick="nomeMsg3()" class="nome">${Norai.name}</li>
+                                          <li class="frase4">${Norai.darOi()}</li>
+                                          <li onclick="nomeMsg4()" class="nome">${Magali.name}</li>
+                                          <li class="frase5">${Magali.darOi()}</li>
+                                     </ul>`;
+            }
+    </script>
+</body>
+<footer>
+    
+    
+</footer>
+</html>
